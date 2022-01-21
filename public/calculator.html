@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Grade Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="margin-bottom">Grade Calculator</h1>
+      <section class="main">
+        <h2>Activities</h2>
+        <p>Give grades to the numeric activities:</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Short Name</th>
+              <th>Weight</th>
+              <th>Grade</th>
+              <th>Percent</th>
+            </tr>
+          </thead>
+          <tbody data-activity-parent>
+            <tr data-activity-row>
+              <td>Activity 1</td>
+              <td>A1</td>
+              <td class="input-container">
+                <input data-weight-input type="text" />
+              </td>
+              <td class="input-container">
+                <input data-score-input type="text" /> /
+                <input data-total-input type="text" />
+              </td>
+              <td data-percent></td>
+            </tr>
+            <tr data-activity-row>
+              <td>Activity 2</td>
+              <td>A2</td>
+              <td class="input-container">
+                <input data-weight-input type="text" />
+              </td>
+              <td class="input-container">
+                <input data-score-input type="text" /> /
+                <input data-total-input type="text" />
+              </td>
+              <td data-percent></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn" id="add-activity-btn">add activity</button>
+        <div class="result-container">
+          <h2>Result</h2>
+          <p id="result"></p>
+        </div>
+        <div class="calculate-container">
+          <button class="btn" data-weighted-btn>weighted</button
+          ><button class="btn" data-mean-btn>mean</button>
+        </div>
+      </section>
+    </main>
+    <script src="calculator.js"></script>
+  </body>
+</html>

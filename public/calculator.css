@@ -1,0 +1,119 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: black;
+  --secondary: #b51119;
+  --background: #e9eff1;
+  --chart-border: #9596975d;
+  --banner: #3c3935;
+  --max-container-width: 50rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --banner-height: 2.5rem;
+  background: var(--secondary);
+  padding: var(--banner-height);
+}
+
+main {
+  background: white;
+  box-shadow: 0rem var(--banner-height) var(--banner),
+    0rem calc(-1 * var(--banner-height)) var(--banner);
+  padding: 2rem;
+  min-width: 42rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  max-width: var(--max-container-width);
+}
+
+th {
+  height: 2rem;
+  text-align: start;
+  background-color: var(--chart-border);
+}
+
+th,
+td {
+  padding-left: 0.5rem;
+  padding-bottom: 0.1rem;
+  border: 1px solid var(--primary);
+  width: 10rem;
+}
+
+td {
+  height: 2.6rem;
+}
+
+input {
+  width: 2.5rem;
+  height: 1.8rem;
+}
+
+h2 {
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+
+.input-container {
+  vertical-align: bottom;
+}
+
+.main {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  background: var(--background);
+  max-width: var(--max-container-width);
+  min-width: 28rem;
+  padding: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: white;
+  width: 5.5rem;
+  height: 1.8rem;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  border: transparent;
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calculate-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+#add-activity-btn {
+  width: 6.9rem;
+}
+
+/* Toggled Styles */
+.invalid-input {
+  box-shadow: 0rem 0rem 0.1rem 0.1rem red;
+}
