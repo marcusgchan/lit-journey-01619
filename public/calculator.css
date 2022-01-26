@@ -34,10 +34,14 @@ body {
 }
 
 main {
+  --padding: 2rem;
+  --blur-radius: 0.5rem;
   background: white;
   box-shadow: 0rem var(--banner-height) var(--banner),
-    0rem calc(-1 * var(--banner-height)) var(--banner);
-  padding: 2rem;
+    0rem calc(-1 * var(--banner-height)) var(--banner),
+    0 var(--banner-height) var(--blur-radius) var(--banner),
+    0 calc(-1 * var(--banner-height)) var(--blur-radius) var(--banner);
+  padding: var(--padding);
   min-width: 42rem;
 }
 
