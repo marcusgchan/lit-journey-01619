@@ -104,12 +104,6 @@ h2 {
   border: transparent;
 }
 
-.result-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .calculate-container {
   display: flex;
   justify-content: end;
