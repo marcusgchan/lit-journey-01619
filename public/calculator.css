@@ -122,6 +122,5 @@ h2 {
 /* Toggled Styles */
 .invalid-input {
   -webkit-appearance: none;
-  -webkit-box-shadow: 0rem 0rem 0.1rem 0.1rem red;
   box-shadow: 0rem 0rem 0.1rem 0.1rem red;
 }
